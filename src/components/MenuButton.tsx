@@ -16,8 +16,8 @@ export default function MenuButton() {
       }}
     >
       <svg width="22" height="22" viewBox="0 0 22 22">
-        <rect y="6" width="22" height="2" fill="#fff" />
-        <rect y="14" width="22" height="2" fill="#fff" />
+        <rect y="6" width="22" height="1" fill="#fff" />
+        <rect y="14" width="22" height="1" fill="#fff" />
       </svg>
     </div>
   );

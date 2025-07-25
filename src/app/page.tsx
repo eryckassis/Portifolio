@@ -44,18 +44,6 @@ export default function Home() {
         >
           <Subtitle />
           <MainTitle />
-          <div
-            style={{
-              position: "absolute",
-              right: 0,
-              top: "50%",
-              transform: "translateY(-50%)",
-              fontWeight: 500,
-              fontSize: 15,
-            }}
-          >
-            GOOD DESIGN IS HONEST
-          </div>
         </div>
         <ScrollDownIcon />
       </div>

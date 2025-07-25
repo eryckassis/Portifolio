@@ -8,7 +8,7 @@ export default function SideNav() {
         background: "#000",
         color: "#fff",
         borderRadius: "8px 0 0 8px",
-        padding: "18px 12px",
+        padding: "55px 12px",
         fontWeight: 900,
         fontSize: 22,
         letterSpacing: 1,
