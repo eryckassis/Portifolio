@@ -9,7 +9,7 @@ import SideNav from "../components/SideNav";
 import MenuButton from "../components/MenuButton";
 import MouseFollow from "@components/MouseFollow";
 
-import "../styles/Scroll.css";
+import "../styles/ScrollDownIcon.css";
 import "../styles/animations.css";
 
 export default function Home() {

@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import gsap from "gsap";
-import "../styles/Scroll.css";
+import "../styles/ScrollDownIcon.css";
 
 const ScrollDownIcon: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
