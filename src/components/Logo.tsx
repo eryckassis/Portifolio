@@ -7,8 +7,7 @@ export default function Logo() {
         left: 15,
         width: 24,
         height: 24,
-        borderRadius: "50%",
-        background: "#000",
+        borderRadius: "100%",
       }}
     />
   );

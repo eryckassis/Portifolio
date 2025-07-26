@@ -1,0 +1,43 @@
+.circle-follow {
+  position: fixed;
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  left: -21px;
+  top: -21px;
+  border-radius: 100%;
+  z-index: 10000;
+  pointer-events: none;
+  transform: scale(1);
+  transition: border-color 0.3s;
+  mix-blend-mode: difference; /* Opcional */
+}
+
+.circle {
+  position: fixed;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  left: -10px;
+  top: -10px;
+  border-radius: 100%;
+  z-index: 10000;
+  transform: scale(1);
+  pointer-events: none;
+  transition: background 0.2s;
+  mix-blend-mode: difference; /* Opcional, para efeito invertido igual ao site */
+}
+.circle-follow {
+  position: fixed;
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  left: -21px;
+  top: -21px;
+  border-radius: 100%;
+  z-index: 10000;
+  pointer-events: none;
+  transform: scale(1);
+  transition: border-color 0.3s;
+  mix-blend-mode: difference; /* Opcional */
+}

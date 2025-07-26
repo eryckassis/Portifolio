@@ -7,6 +7,10 @@ import SoundToggle from "../components/SoundToggle";
 import ScrollDownIcon from "../components/ScrollDownIcon";
 import SideNav from "../components/SideNav";
 import MenuButton from "../components/MenuButton";
+import MouseFollow from "@components/MouseFollow";
+
+import "../styles/Scroll.css";
+import "../styles/animations.css";
 
 export default function Home() {
   return (
@@ -42,12 +46,14 @@ export default function Home() {
         <div
           style={{ width: "100%", textAlign: "center", position: "relative" }}
         >
+          <MouseFollow />
           <Subtitle />
           <MainTitle />
         </div>
         <ScrollDownIcon />
       </div>
       <SoundToggle />
+
       <MenuButton />
     </div>
   );
