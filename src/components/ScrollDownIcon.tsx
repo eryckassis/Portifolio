@@ -129,13 +129,13 @@ const ScrollDownIcon: React.FC = () => {
       <svg
         ref={arrowRef}
         className="arrow-svg"
-        width="36"
-        height="36"
+        width="36px"
+        height="36px"
         style={{
           position: "absolute",
-          left: 40,
-          top: 40,
-          transform: "translate(-50%, -50%)",
+          left: "40px",
+          top: "40px",
+          transform: "translate(-4%, -4%)",
           zIndex: 10,
           pointerEvents: "none",
         }}

@@ -33,12 +33,13 @@
 
 .arrow-svg {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 40px;
+  top: 40px;
+  transform: translate(-4%, -4%);
   width: 36px;
   height: 36px;
   z-index: 10;
+
   pointer-events: none;
   will-change: transform;
 }
