@@ -9,7 +9,7 @@ export default function Subtitle() {
         fontWeight: 400,
       }}
     >
-      01/04 - <span style={{ color: "#555" }}>HOVER →</span>
+      01/04 - <span style={{ color: "#050505ff" }}>HOVER →</span>
     </div>
   );
 }

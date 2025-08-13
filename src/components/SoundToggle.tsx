@@ -11,7 +11,7 @@ export default function SoundToggle() {
         letterSpacing: 2,
         fontSize: 15,
         color: "#000",
-        opacity: 0.5,
+        opacity: 0.7,
       }}
     >
       SOUND <span style={{ fontWeight: 900, color: "#000" }}>OFF</span>

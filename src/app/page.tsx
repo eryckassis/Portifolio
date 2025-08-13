@@ -46,15 +46,14 @@ export default function Home() {
         <div
           style={{ width: "100%", textAlign: "center", position: "relative" }}
         >
-          <MouseFollow />
           <Subtitle />
           <MainTitle />
         </div>
         <ScrollDownIcon />
       </div>
       <SoundToggle />
-
       <MenuButton />
+      <MouseFollow />
     </div>
   );
 }
