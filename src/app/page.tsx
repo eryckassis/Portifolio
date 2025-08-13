@@ -8,7 +8,6 @@ import ScrollDownIcon from "../components/ScrollDownIcon";
 import SideNav from "../components/SideNav";
 import MenuButton from "../components/MenuButton";
 import MouseFollow from "@components/MouseFollow";
-
 import "../styles/ScrollDownIcon.css";
 import "../styles/animations.css";
 
@@ -19,7 +18,7 @@ export default function Home() {
     >
       <AnimatedContractInfo />
       <Logo />
-      <div style={{ position: "absolute", top: 20, left: 20 }}>AD</div>
+
       <div
         style={{
           position: "absolute",
@@ -28,7 +27,7 @@ export default function Home() {
           right: 0,
           width: "100%",
           textAlign: "center",
-          fontSize: 13,
+          fontSize: 20,
           fontWeight: 400,
         }}
       ></div>

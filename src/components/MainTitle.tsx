@@ -29,7 +29,7 @@ export default function MainTitle() {
             letterSpacing: 4,
           }}
         >
-          A D
+          <div className="link">N E</div>
         </div>
       </div>
 
@@ -53,8 +53,12 @@ export default function MainTitle() {
             whiteSpace: "pre-line",
           }}
         >
-          <div style={{ marginLeft: "-90px", letterSpacing: 4 }}>MULTI –</div>
-          <div style={{ marginLeft: -100, letterSpacing: 4 }}>DISCIPLINED</div>
+          <div style={{ marginLeft: "-90px", letterSpacing: 4 }}>
+            <div className="link">MULTI –</div>
+          </div>
+          <div style={{ marginLeft: -100, letterSpacing: 4 }}>
+            <div className="link">DISCIPLINED</div>
+          </div>
           <div
             style={{
               position: "relative",
@@ -63,7 +67,7 @@ export default function MainTitle() {
             }}
           >
             <div style={{ marginLeft: "80px", letterSpacing: 4 }}>
-              DEVELOPER
+              <div className="link">DEVELOPER</div>
             </div>
           </div>
           {/* GOOD DESIGN IS HONEST alinhado à direita da última linha */}
@@ -81,7 +85,7 @@ export default function MainTitle() {
               whiteSpace: "nowrap",
             }}
           >
-            GOOD DESIGN IS HONEST
+            <div className="link">GOOD DESIGN IS HONEST</div>
           </div>
         </div>
       </div>

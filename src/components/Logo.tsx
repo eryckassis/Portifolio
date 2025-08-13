@@ -1,14 +1,10 @@
+"use client";
+import React from "react";
+
 export default function Logo() {
   return (
-    <div
-      style={{
-        position: "absolute",
-        top: 15,
-        left: 15,
-        width: 24,
-        height: 24,
-        borderRadius: "100%",
-      }}
-    />
+    <div style={{ position: "absolute", top: 20, left: 20 }}>
+      <div className="link"> NE </div>
+    </div>
   );
 }
