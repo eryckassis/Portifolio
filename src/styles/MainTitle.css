@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   margin: 60px 0 20px 0;
+  z-index: 2;
 }
 
 .main-title-ad {
@@ -13,14 +14,15 @@
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 90px;
 }
 
 .main-title-ad-inner {
-  margin-left: -350px;
+  margin-left: -500px;
   font-size: 13px;
   line-height: 1.5;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
+  position: relative;
 }
 
 .link {
@@ -50,15 +52,9 @@
   margin-left: -90px;
   letter-spacing: 4px;
 }
-.main-title-line-multi12 {
-  margin-left: -90px;
-  letter-spacing: 4px;
-  color: #ffffff;
-}
 
 .main-title-line-disciplined {
   margin-left: -100px;
-  z-index: 1;
   letter-spacing: 4px;
 }
 
@@ -76,7 +72,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;

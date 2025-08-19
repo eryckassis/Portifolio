@@ -26,14 +26,14 @@ export default function MainTitle() {
             </div>
           </div>
 
-          <div className="main-title-line-multi12">
-            <div className="link">PERSONALIXZ –</div>
+          <div className="main-title-mask-text main-title-line-multi12">
+            <div className="link"></div>
           </div>
           <div className="main-title-line-disciplined">
             <div className="link">DISCIPLINED</div>
           </div>
           <div className="main-title-line-developer">
-            <div className="link">DEVELOPER</div>
+            <div className="link">MACAQUITOS</div>
           </div>
           <div className="main-title-extra">
             <div className="link">GOOD DESIGN IS HONEST</div>
