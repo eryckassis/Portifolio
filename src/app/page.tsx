@@ -1,3 +1,4 @@
+import React from "react";
 import AnimatedContractInfo from "@components/animations/AnimatedContract";
 import Logo from "../components/Logo";
 import Clock from "../components/Clock";

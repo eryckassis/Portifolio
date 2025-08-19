@@ -121,7 +121,7 @@ const ScrollDownIcon: React.FC = () => {
           cx="60"
           cy="60"
           r="54"
-          stroke="#444"
+          stroke="#000000ff"
           strokeWidth="1.5"
           fill="none"
         />
@@ -140,7 +140,7 @@ const ScrollDownIcon: React.FC = () => {
           pointerEvents: "none",
         }}
       >
-        <g stroke="#444" strokeWidth="4" strokeLinecap="round">
+        <g stroke="#000000ff" strokeWidth="4" strokeLinecap="round">
           <line x1="18" y1="10" x2="18" y2="24" />
           <polyline
             points="11,18 18,27 25,18"

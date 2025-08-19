@@ -1,90 +1,41 @@
 import React from "react";
+import "../styles/MainTitle.css";
 
 export default function MainTitle() {
   return (
-    <div
-      style={{
-        width: "100%",
-        position: "relative",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        margin: "60px 0 20px 0",
-      }}
-    >
-      {/* AD acima do título */}
-      <div
-        style={{
-          fontWeight: 700,
-          fontSize: 16,
-          letterSpacing: 2,
-          marginBottom: 10,
-        }}
-      >
-        <div
-          style={{
-            marginLeft: "-350px",
-            fontSize: 13,
-            lineHeight: 1.5,
-            letterSpacing: 4,
-          }}
-        >
+    <div className="main-title-container">
+      <div className="main-title-ad">
+        <div className="main-title-ad-inner">
           <div className="link">N E</div>
         </div>
       </div>
 
-      <div
-        style={{
-          position: "relative",
-          marginLeft: "20px",
-          display: "inline-block",
-          textAlign: "center",
-        }}
-      >
-        <div
-          style={{
-            fontSize: "6vw", // Responsivo, ajuste conforme necessário
-            fontWeight: 900,
-            lineHeight: 1.02,
-            letterSpacing: "-0.04em",
-            textTransform: "uppercase",
-            fontFamily: "'Inter', 'Arial Black', Arial, Helvetica, sans-serif",
-            display: "inline-block",
-            whiteSpace: "pre-line",
-          }}
-        >
-          <div style={{ marginLeft: "-90px", letterSpacing: 4 }}>
-            <div className="link">MULTI –</div>
-          </div>
-          <div style={{ marginLeft: -100, letterSpacing: 4 }}>
-            <div className="link">DISCIPLINED</div>
-          </div>
-          <div
-            style={{
-              position: "relative",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <div style={{ marginLeft: "80px", letterSpacing: 4 }}>
-              <div className="link">DEVELOPER</div>
+      <div className="main-title-block">
+        <div className="main-title-content">
+          <div className="main-title-mask-overlay">
+            <div className="main-title-mask-text">
+              <div className="main-title-line-multi">
+                <div className="link">MULTI -</div>
+              </div>
+              <div className="main-title-line-disciplined">
+                <div className="link">DISCIPLINED</div>
+              </div>
+              <div className="main-title-line-developer">
+                <div className="link">DEVELOPER</div>
+              </div>
             </div>
           </div>
-          {/* GOOD DESIGN IS HONEST alinhado à direita da última linha */}
-          <div
-            style={{
-              position: "absolute",
-              right: "-230px", // ajuste conforme largura do container/tela
-              bottom: 35,
-              fontSize: 17,
-              fontWeight: 500,
-              lineHeight: 1.4,
-              letterSpacing: 0.5,
-              textTransform: "uppercase",
-              fontFamily: "'Inter', Arial, Helvetica, sans-serif",
-              whiteSpace: "nowrap",
-            }}
-          >
+
+          <div className="main-title-line-multi12">
+            <div className="link">PERSONALIXZ –</div>
+          </div>
+          <div className="main-title-line-disciplined">
+            <div className="link">DISCIPLINED</div>
+          </div>
+          <div className="main-title-line-developer">
+            <div className="link">DEVELOPER</div>
+          </div>
+          <div className="main-title-extra">
             <div className="link">GOOD DESIGN IS HONEST</div>
           </div>
         </div>
