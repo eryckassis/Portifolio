@@ -5,6 +5,186 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", Arial, sans-serif;
-  background: #fff;
-  color: #000;
+  background-color: var(--bg);
+}
+:root {
+  --bg: #ffffff;
+}
+
+a:hover {
+  color: white;
+}
+
+.bg {
+  background-color: var(--bg);
+}
+
+/* --- MainTitle.css --- */
+.main-title-container {
+  color: #ffffff;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0 20px 0;
+  z-index: 100;
+}
+
+.main-title-ad {
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 90px;
+}
+
+.main-title-ad-inner {
+  margin-left: -500px;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+.link {
+  font-family: "Inter", "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+.main-title-block {
+  position: relative;
+  margin-left: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-title-content {
+  font-size: 6vw; /* Responsivo */
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  font-family: "Inter", "Arial Black", Arial, Helvetica, sans-serif;
+  display: inline-block;
+  white-space: pre-line;
+  position: relative;
+}
+
+.main-title-line-multi {
+  margin-left: -90px;
+  letter-spacing: 4px;
+}
+
+.main-title-line-disciplined {
+  margin-left: -100px;
+  letter-spacing: 4px;
+}
+
+.main-title-line-developer {
+  margin-left: 80px;
+  letter-spacing: 4px;
+}
+
+/* Texto escondido/máscara */
+.main-title-mask-overlay {
+  position: absolute;
+  inset: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title-mask-text {
+  color: #000000;
+  font-size: 6vw;
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  font-family: "Inter", "Arial Black", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Frase extra */
+.main-title-extra {
+  color: #000000;
+  position: absolute;
+  right: -230px;
+  bottom: 35px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+/* --- animations.css --- */
+.circle {
+  cursor: none;
+  position: fixed;
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  left: -5px;
+  top: -5px;
+  bottom: -25px;
+  border-radius: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: background 0.5s;
+  mix-blend-mode: difference;
+}
+
+/* --- ScrollDownIcon.css --- */
+.magnet-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 80px auto 0;
+
+  cursor: pointer;
+}
+
+.ball {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 120px;
+}
+
+.arrow-svg {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  transform: translate(-4%, -4%);
+  width: 36px;
+  height: 36px;
+  pointer-events: none;
+  will-change: transform;
 }

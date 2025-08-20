@@ -1,7 +1,13 @@
+"use client";
 import React from "react";
-import "../styles/MainTitle.css";
+import "../styles/globals.css";
+import "../styles/globals.css";
+// import removido: animations.css agora está em globals.css
 
 export default function MainTitle() {
+  const overlayRef1 = React.useRef<HTMLDivElement>(null);
+  const overlayRef2 = React.useRef<HTMLDivElement>(null);
+
   return (
     <div className="main-title-container">
       <div className="main-title-ad">
@@ -25,15 +31,11 @@ export default function MainTitle() {
               </div>
             </div>
           </div>
-
-          <div className="main-title-mask-text main-title-line-multi12">
-            <div className="link"></div>
+          <div className="hidden-content" ref={overlayRef1}>
+            <div className="link">MASCAREDISSSOM</div>
           </div>
-          <div className="main-title-line-disciplined">
-            <div className="link">DISCIPLINED</div>
-          </div>
-          <div className="main-title-line-developer">
-            <div className="link">MACAQUITOS</div>
+          <div className="hidden-content" ref={overlayRef2}>
+            <div className="link">DEVELOPER</div>
           </div>
           <div className="main-title-extra">
             <div className="link">GOOD DESIGN IS HONEST</div>

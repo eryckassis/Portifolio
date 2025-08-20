@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import AnimatedContractInfo from "@components/animations/AnimatedContract";
 import Logo from "../components/Logo";
@@ -11,8 +12,11 @@ import MenuButton from "../components/MenuButton";
 import MouseFollow from "@components/MouseFollow";
 import "../styles/ScrollDownIcon.css";
 import "../styles/animations.css";
+import "../styles/globals.css";
+import "../styles/MainTitle.css";
 
 export default function Home() {
+  const overlayRef = React.useRef<HTMLDivElement>(null);
   return (
     <div
       style={{ minHeight: "100vh", position: "relative", overflow: "hidden" }}
@@ -53,7 +57,8 @@ export default function Home() {
       </div>
       <SoundToggle />
       <MenuButton />
-      <MouseFollow />
+      <div ref={overlayRef} className="hidden-content" />
+      <MouseFollow overlayRef={overlayRef} />
     </div>
   );
 }
