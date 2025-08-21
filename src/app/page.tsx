@@ -10,10 +10,12 @@ import ScrollDownIcon from "../components/ScrollDownIcon";
 import SideNav from "../components/SideNav";
 import MenuButton from "../components/MenuButton";
 import MouseFollow from "@components/MouseFollow";
+import MaskedImage from "@components/MaskedImage";
 import "../styles/ScrollDownIcon.css";
 import "../styles/animations.css";
 import "../styles/globals.css";
 import "../styles/MainTitle.css";
+import "../styles/masked.css";
 
 export default function Home() {
   const overlayRef = React.useRef<HTMLDivElement>(null);
@@ -57,6 +59,7 @@ export default function Home() {
       </div>
       <SoundToggle />
       <MenuButton />
+      <MaskedImage overlayRef={overlayRef} />
       <div ref={overlayRef} className="hidden-content" />
       <MouseFollow overlayRef={overlayRef} />
     </div>

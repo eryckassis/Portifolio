@@ -1,3 +1,19 @@
+/* --- NeueMontreal Font --- */
+@font-face {
+  font-family: "NeueMontreal-Regular";
+  src:
+    url("/fonts/NeueMontreal-Regular.woff2") format("woff2"),
+    url("/fonts/NeueMontreal-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Utilitário para uppercase com NeueMontreal */
+.neuemontreal-uppercase {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  text-transform: uppercase;
+}
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
 
 body {
@@ -5,18 +21,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", Arial, sans-serif;
-  background-color: var(--bg);
+  color: #000000;
+  background: #ffffff;
 }
-:root {
-  --bg: #ffffff;
-}
-
-a:hover {
-  color: white;
-}
-
-.bg {
-  background-color: var(--bg);
+.animated-contract-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 /* --- MainTitle.css --- */
@@ -28,7 +41,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   margin: 60px 0 20px 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 .main-title-ad {
@@ -48,7 +61,10 @@ a:hover {
 }
 
 .link {
-  font-family: "Inter", "Arial Black", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.link-NE {
+  font-weight: bold;
 }
 
 .main-title-block {
@@ -61,28 +77,39 @@ a:hover {
 .main-title-content {
   font-size: 6vw; /* Responsivo */
   font-weight: 900;
-  line-height: 1.02;
-  letter-spacing: -0.04em;
+  line-height: 0.5;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   font-family: "Inter", "Arial Black", Arial, Helvetica, sans-serif;
   display: inline-block;
   white-space: pre-line;
   position: relative;
 }
+.travessao {
+  position: absolute;
+  right: 330px;
+  bottom: 150px;
+  margin-left: -90px;
+  line-height: 0.6;
+  font-size: 10vw;
+  z-index: 1;
+}
 
 .main-title-line-multi {
   margin-left: -90px;
-  letter-spacing: 4px;
+  letter-spacing: 0.9;
+  line-height: 0.6;
 }
 
 .main-title-line-disciplined {
   margin-left: -100px;
-  letter-spacing: 4px;
+  letter-spacing: 0.9;
 }
 
 .main-title-line-developer {
-  margin-left: 80px;
-  letter-spacing: 4px;
+  margin-left: 250px;
+  letter-spacing: 0.9;
+  line-height: 0.6;
 }
 
 /* Texto escondido/máscara */
@@ -99,9 +126,9 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-
 .main-title-mask-text {
   color: #000000;
+
   font-size: 6vw;
   font-weight: 900;
   line-height: 1.02;
@@ -109,18 +136,19 @@ a:hover {
   text-transform: uppercase;
   font-family: "Inter", "Arial Black", Arial, Helvetica, sans-serif;
   text-align: center;
+  z-index: -1;
 }
 
 /* Frase extra */
 .main-title-extra {
   color: #000000;
   position: absolute;
-  right: -230px;
-  bottom: 35px;
-  font-size: 17px;
+  right: -120px;
+  bottom: -30px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.4;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.1px;
   text-transform: uppercase;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   white-space: nowrap;
@@ -130,14 +158,14 @@ a:hover {
 .circle {
   cursor: none;
   position: fixed;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 35px;
   height: 35px;
   left: -5px;
   top: -5px;
   bottom: -25px;
   border-radius: 50%;
-  z-index: 1000;
+  z-index: 10000;
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: background 0.5s;
@@ -153,7 +181,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 80px auto 0;
+  margin: 200px auto 0;
 
   cursor: pointer;
 }

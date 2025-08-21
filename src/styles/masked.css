@@ -1,0 +1,63 @@
+.masked-shape {
+  /* Variáveis para posição e tamanho do efeito */
+  --x: 50vw;
+  --y: 50vh;
+  --size: 0px;
+  width: 100vw;
+  height: 18vw;
+  background: #9b2020;
+  /* Máscara radial animada pelo mouse */
+  mask-image: radial-gradient(
+    circle at var(--x) var(--y),
+    black var(--size),
+    transparent 0
+  );
+  -webkit-mask-image: radial-gradient(
+    circle at var(--x) var(--y),
+    black var(--size),
+    transparent 0
+  );
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-position: center;
+  -webkit-mask-position: center;
+  opacity: 1;
+  transition:
+    mask-image 0.3s,
+    -webkit-mask-image 0.3s;
+  pointer-events: none;
+}
+.mask-svg {
+  width: 70vw;
+  height: 18vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.masked-shape {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  mask-image: url("/images/cartão-de-visitas-feminino-empreendedora-elegante-clean-minimalista-bcreme-verde-e-preto-Photoroom.svg");
+  -webkit-mask-image: url("/images/cartão-de-visitas-feminino-empreendedora-elegante-clean-minimalista-bcreme-verde-e-preto-Photoroom.svg");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  display: block;
+}
+.masked-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100vw;
+  margin: -853px 0 20px 0;
+  flex-direction: column;
+}

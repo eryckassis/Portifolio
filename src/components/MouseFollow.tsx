@@ -115,6 +115,7 @@ const MouseFollow: React.FC<MouseFollowProps> = ({ overlayRef }) => {
 
     // Hover effects (opcional)
     const handleHover = () => {
+      overlayRef?.current?.classList.add("visible");
       gsap.to(circleRef.current, {
         scale: 1.2,
         opacity: 1,
@@ -124,6 +125,7 @@ const MouseFollow: React.FC<MouseFollowProps> = ({ overlayRef }) => {
       tl.restart();
     };
     const handleUnhover = () => {
+      overlayRef?.current?.classList.remove("visible");
       gsap.to(circleRef.current, {
         scale: 1,
         opacity: 1,

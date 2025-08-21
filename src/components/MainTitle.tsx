@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
+import "../styles/MainTitle.css";
 import "../styles/globals.css";
-import "../styles/globals.css";
-// import removido: animations.css agora está em globals.css
+import "../styles/animations.css";
 
 export default function MainTitle() {
-  const overlayRef1 = React.useRef<HTMLDivElement>(null);
-  const overlayRef2 = React.useRef<HTMLDivElement>(null);
-
+  const overlayRef = React.useRef<HTMLDivElement>(null);
   return (
     <div className="main-title-container">
       <div className="main-title-ad">
@@ -15,13 +13,16 @@ export default function MainTitle() {
           <div className="link">N E</div>
         </div>
       </div>
-
       <div className="main-title-block">
         <div className="main-title-content">
-          <div className="main-title-mask-overlay">
+          {/* Conteúdo principal oculto */}
+          <div className="main-title-mask-overlay" style={{ display: "none" }}>
             <div className="main-title-mask-text">
               <div className="main-title-line-multi">
-                <div className="link">MULTI -</div>
+                <div className="link">MULTI</div>
+              </div>
+              <div className="travessao">
+                <div className="link">–</div>
               </div>
               <div className="main-title-line-disciplined">
                 <div className="link">DISCIPLINED</div>
@@ -31,14 +32,35 @@ export default function MainTitle() {
               </div>
             </div>
           </div>
-          <div className="hidden-content" ref={overlayRef1}>
-            <div className="link">MASCAREDISSSOM</div>
-          </div>
-          <div className="hidden-content" ref={overlayRef2}>
-            <div className="link">DEVELOPER</div>
-          </div>
-          <div className="main-title-extra">
-            <div className="link">GOOD DESIGN IS HONEST</div>
+
+          {/* Agora o conteúdo principal está em hidden-content */}
+          <div className="hidden-content" ref={overlayRef}>
+            <div className="main-title-mask-text">
+              <div className="main-title-line-multi">
+                <div className="link">MULTI</div>
+              </div>
+              <div className="travessao">
+                <div className="link">–</div>
+              </div>
+              <div className="main-title-line-disciplined">
+                <div className="link">DISCIPLINED</div>
+              </div>
+              <div className="main-title-line-developer">
+                <div className="link">DEVELOPER</div>
+              </div>
+            </div>
+            <div className="main-title-extra">
+              <div
+                className="link"
+                style={{
+                  fontFamily: "NeueMontreal, sans-serif",
+                  fontWeight: "bold",
+                  bottom: "10px",
+                }}
+              >
+                GOOD DESIGN IS HONEST
+              </div>
+            </div>
           </div>
         </div>
       </div>

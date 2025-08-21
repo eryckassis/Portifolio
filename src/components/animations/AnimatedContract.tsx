@@ -59,27 +59,28 @@ export default function AnimatedContract() {
   }
 
   return (
-    <div
-      style={{
-        position: "absolute",
-        top: 30,
-        left: 0,
-        right: 0,
-        width: "100%",
-        textAlign: "center",
-        fontSize: 15,
-        fontWeight: 500,
-        letterSpacing: 0.5,
-        zIndex: 10,
-        cursor: "pointer",
-        userSelect: "none",
-        fontFamily: "inherit",
-      }}
-      onMouseEnter={entradaDoMouse}
-      onMouseLeave={saidaDoMouse}
-    >
-      <div ref={lineRef} style={{ display: "inline-block" }}>
-        {PHRASE}
+    <div className="animated-contract-container">
+      <div
+        style={{
+          position: "absolute",
+          top: 30,
+          left: 0,
+          right: 0,
+          width: "100%",
+          textAlign: "center",
+          fontSize: 15,
+          zIndex: 10,
+          cursor: "pointer",
+          userSelect: "none",
+          fontFamily: "NeueMontreal-Regular, sans-serif",
+          textTransform: "uppercase",
+        }}
+        onMouseEnter={entradaDoMouse}
+        onMouseLeave={saidaDoMouse}
+      >
+        <div ref={lineRef} style={{ display: "inline-block" }}>
+          {PHRASE}
+        </div>
       </div>
     </div>
   );
